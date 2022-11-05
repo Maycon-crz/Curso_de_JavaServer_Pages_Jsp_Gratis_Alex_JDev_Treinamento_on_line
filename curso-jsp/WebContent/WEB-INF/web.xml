@@ -10,7 +10,17 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   <context-param>
-  	<param-name>estado</param-name>
-  	<param-value>paraná</param-value>
+    <param-name>estado</param-name>
+    <param-value>paraná</param-value>
   </context-param>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

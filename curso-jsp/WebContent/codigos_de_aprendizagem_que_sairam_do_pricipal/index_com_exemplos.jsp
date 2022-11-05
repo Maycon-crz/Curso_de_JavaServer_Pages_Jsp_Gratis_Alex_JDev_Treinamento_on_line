@@ -70,16 +70,32 @@
 		</jsp:forward>
 		
 		<!-- Incluindo outros htmls no mesmo -->
-		<jsp:include page="cabecalho.jsp"/>
+		<jsp:include page="../cabecalho.jsp"/>
 		<h3>fsdfsdfdsfsdfsdf</h3>
-		<jsp:include page="rodape.jsp"/>
+		<jsp:include page="../rodape.jsp"/>
 		
-		<!-- * Recupera o atributo nome do objeto calcula, obs: Para isso funcionar é necessário ter importado lá em cima o <jsp:useBean id="calcula" class="beans.BeanCursoJsp" type="beans.BeanCursoJsp" scope="page" />   -->
+		<!-- Recupera o atributo nome do objeto calcula, obs: Para isso funcionar é necessário ter importado lá em cima o <jsp:useBean id="calcula" class="beans.BeanCursoJsp" type="beans.BeanCursoJsp" scope="page" />   -->
 		<jsp:getProperty property="nome" name="calcula"/>
 		<br/>
 		<jsp:getProperty property="ano" name="calcula"/>
 		<br/>
-		<jsp:getProperty property="sexo" name="calcula"/>		
+		<jsp:getProperty property="sexo" name="calcula"/>
+		
+		<% session.setAttribute("user", "javaavancado"); %>
+		
+		<!--
+		<form action="cabecalho.jsp" method="post">
+			<input type="text" id="nome" name="nome">
+			<br/>
+			<input type="text" id="ano" name="ano">
+			<br/>
+			<input type="submit" value="testar"/>
+		</form>
+		-->
+		
+		<hr/>
+		<!-- Chama método que foi importado/incluido usando jsp lá em cima -->
+		<%= calcula.calcula(50) %>		
 		
 	</body>
 </html>

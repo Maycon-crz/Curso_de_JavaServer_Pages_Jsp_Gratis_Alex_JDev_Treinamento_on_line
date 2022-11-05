@@ -3,8 +3,6 @@
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
-<%@ taglib prefix="myprefix" uri="WEB-INF/testetag.tld" %>
     
 <!DOCTYPE html>
 <html>
@@ -15,10 +13,7 @@
 	<body>
 		<!-- * é todos os atributos do objeto calcula -->
 		<jsp:setProperty property="*" name="calcula"/>
-		<h3>Cabecalho</h3>
-		Nome: ${param.nome}
-		<br/>
-		Ano: ${param.ano}
 		
+		<h3>Seja bem vindo ao sistema em jsp</h3>
 	</body>
 </html>

@@ -13,6 +13,12 @@
     <param-name>estado</param-name>
     <param-value>paraná</param-value>
   </context-param>
+  
+  <filter>
+    <filter-name>filter</filter-name>
+    <filter-class>filter.Filter</filter-class>
+  </filter>
+
   <servlet>
     <description></description>
     <display-name>LoginServlet</display-name>

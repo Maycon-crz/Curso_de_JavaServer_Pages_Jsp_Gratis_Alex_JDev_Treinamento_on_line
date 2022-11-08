@@ -75,7 +75,7 @@
 		<h3>fsdfsdfdsfsdfsdf</h3>
 		<jsp:include page="rodape.jsp"/>
 		
-		<!-- Recupera o atributo nome do objeto calcula, obs: Para isso funcionar é necessário ter importado lá em cima o <jsp:useBean id="calcula" class="beans.BeanCursoJsp" type="beans.BeanCursoJsp" scope="page" />   -->
+		<!-- recupera o atributo nome do objeto calcula obs Para isso funcionar é necessário ter importado lá em cima o   -->
 		<jsp:getProperty property="nome" name="calcula"/>
 		<br/>
 		<jsp:getProperty property="ano" name="calcula"/>

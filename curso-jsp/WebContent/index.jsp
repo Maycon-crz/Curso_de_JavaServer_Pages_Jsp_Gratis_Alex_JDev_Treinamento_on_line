@@ -14,22 +14,7 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-	
-	<c:set var="numero" value="${100/2}"/>
 		
-	<c:if test="${numero == 50}">
-		<c:redirect url="acessoliberado.jsp" />
-	</c:if>
-	
-	<c:if test="${numero < 50}">
-		<c:redirect url="https://www.javaavancado.com.br" />
-	</c:if>	
-		
-	<p/>
-	<p/>
-	<p/>
-	<p/>
-	
 		<form action="LoginServlet" method="post">
 			Login:
 			<input type="text" id="login" name="login">
